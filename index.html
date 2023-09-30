@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script type="module" src="./index.js"></script>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            background-image: url("assets/red-3d-background-vector-images.jpg");
+        }
+
+        canvas {
+            width: 100%;
+            /* box-shadow: 0px 0px 10px 1px black; */
+        }
+
+        #fps {
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--
+    <canvas id="glCanvas" width="320" height="180"></canvas>
+    -->
+    <canvas id="glCanvas" width="1920" height="1080"></canvas>
+    <span id="fps"></span>
+
+    <!--
+    <pre><code id="log"></code></pre>
+
+    <script type="text/javascript">
+        (function () {
+            var old = console.log;
+            var logger = document.getElementById('log');
+            console.log = function (message) {
+                old(message);
+                if (typeof message == 'object') {
+                    logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+                } else {
+                    logger.innerHTML += message + '<br />';
+                }
+            }
+        })();
+    </script>
+    -->
+
+</body>
+
+</html>
